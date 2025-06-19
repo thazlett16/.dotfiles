@@ -1,0 +1,12 @@
+docker
+docker-compose
+go
+java-environment-common
+java-runtime-common
+jdk-openjdk
+jdk8-openjdk
+jdk17-openjdk
+jdk21-openjdk
+maven
+nvm
+rustup

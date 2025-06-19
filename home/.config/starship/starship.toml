@@ -1,0 +1,60 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+[│](bold green)$character$directory$git_branch$git_status$fill$lua$nodejs$golang$rust$docker_context$jobs$cmd_duration$package
+[└─>](bold green) '''
+
+add_newline = true
+
+[directory]
+truncation_length = 2
+truncation_symbol = '.../'
+
+[git_branch]
+style = 'fg:green'
+symbol = ' '
+format = '[on](white) [$symbol$branch ]($style)'
+
+[git_status]
+style = 'fg:red'
+format = '([$all_status$ahead_behind]($style) )'
+
+[fill]
+symbol = ' '
+
+[lua]
+format = '[$symbol($version )]($style)'
+symbol = ' '
+
+[nodejs]
+style = 'blue'
+symbol = ' '
+
+[golang]
+style = 'blue'
+symbol = ' '
+
+[rust]
+style = 'orange'
+symbol = ' '
+
+[package]
+symbol = '󰏗 '
+
+[docker_context]
+symbol = ' '
+style = 'fg:#06969A'
+format = '[$symbol]($style) $path'
+detect_files = ['docker-compose.yml', 'docker-compose.yaml', 'Dockerfile']
+detect_extensions = ['Dockerfile']
+
+[jobs]
+symbol = ' '
+style = 'red'
+number_threshold = 1
+format = '[$symbol]($style)'
+
+[cmd_duration]
+min_time = 500
+style = 'fg:gray'
+format = '[$duration]($style)'

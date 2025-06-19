@@ -1,0 +1,79 @@
+{
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Systemd-boot",
+    "custom_commands": [],
+    "hostname": "CHANGE",
+    "kernels": [
+        "linux",
+        "linux-lts"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US.UTF-8"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {},
+        "optional_repositories": [
+            "multilib"
+        ]
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "packages": [
+        "base",
+        "base-devel",
+        "gcc",
+        "git",
+        "github-cli",
+        "inetutils",
+        "make",
+        "man-db",
+        "man-pages",
+        "nano",
+        "neovim",
+        "openssh",
+        "starship",
+        "stow",
+        "tmux",
+        "which",
+        "zsh"
+    ],
+    "parallel_downloads": 0,
+    "profile_config": {
+        "gfx_driver": "All open-source",
+        "greeter": "sddm",
+        "profile": {
+            "custom_settings": {
+                "Awesome": {},
+                "Hyprland": {
+                    "seat_access": "polkit"
+                },
+                "KDE Plasma": {},
+                "Sway": {
+                    "seat_access": "polkit"
+                },
+                "i3-wm": {}
+            },
+            "details": [
+                "Awesome",
+                "Hyprland",
+                "KDE Plasma",
+                "Sway",
+                "i3-wm"
+            ],
+            "main": "Desktop"
+        }
+    },
+    "services": [],
+    "swap": true,
+    "timezone": "US/Central",
+    "version": null
+}
