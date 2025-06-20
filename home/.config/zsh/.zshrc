@@ -10,8 +10,13 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt SHARE_HISTORY             # Share history between all sessions.
 
 # Starship
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
 
 # Coding stuff
 source /usr/share/nvm/init-nvm.sh
+
+# autosuggestions
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# syntax highlighting
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
