@@ -12,6 +12,22 @@ if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
 
+if [[ ! -d ~/codingProjects/material ]]; then
+    mkdir ~/codingProjects/material
+fi
+
+if [[ ! -d ~/codingProjects/material/material-ui ]]; then
+    git clone https://github.com/mui/material-ui.git ~/codingProjects/material/material-ui
+fi
+
+if [[ ! -d ~/codingProjects/material/mui-x ]]; then
+    git clone https://github.com/mui/mui-x.git ~/codingProjects/material/mui-x
+fi
+
+if [[ ! -d ~/codingProjects/material/base-ui ]]; then
+    git clone https://github.com/mui/base-ui.git ~/codingProjects/material/base-ui
+fi
+
 if [[ ! -d ~/codingProjects/tanStack ]]; then
     mkdir ~/codingProjects/tanStack
 fi

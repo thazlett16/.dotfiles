@@ -1,5 +1,7 @@
 base
 base-devel
+docker
+docker-compose
 fd
 fzf
 gcc
@@ -12,6 +14,9 @@ man-db
 man-pages
 nano
 neovim
+networkmanager
+networkmanager-openconnect
+openconnect
 openssh
 ripgrep
 starship

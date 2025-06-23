@@ -13,7 +13,6 @@ export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
 export GOPATH="$XDG_DATA_HOME"/go
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export MAVEN_ARGS="--settings $XDG_CONFIG_HOME/maven/settings.xml"
 export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
 export NVM_DIR="$XDG_DATA_HOME"/nvm
