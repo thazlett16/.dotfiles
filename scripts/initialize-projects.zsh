@@ -12,6 +12,18 @@ if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/i18n-product ]]; then
+    git clone https://github.com/thazlett16/i18n-product.git ~/codingProjects/personalProjects/i18n-product
+fi
+
+if [[ ! -d ~/codingProjects/personalProjects/rust-tutorial ]]; then
+    git clone https://github.com/thazlett16/rust-tutorial.git ~/codingProjects/personalProjects/rust-tutorial
+fi
+
+if [[ ! -d ~/codingProjects/personalProjects/rust-playground ]]; then
+    git clone https://github.com/thazlett16/rust-playground.git ~/codingProjects/personalProjects/rust-playground
+fi
+
 if [[ ! -d ~/codingProjects/material ]]; then
     mkdir ~/codingProjects/material
 fi
@@ -78,4 +90,20 @@ fi
 
 if [[ ! -d ~/codingProjects/tanStack/select ]]; then
     git clone https://github.com/TanStack/select.git ~/codingProjects/tanStack/select
+fi
+
+if [[ ! -d ~/codingProjects/minecraftServers ]]; then
+    mkdir ~/codingProjects/minecraftServers
+fi
+
+if [[ ! -d ~/codingProjects/minecraftServers/pumpkin ]]; then
+    git clone https://github.com/Pumpkin-MC/Pumpkin.git ~/codingProjects/minecraftServers/pumpkin
+fi
+
+if [[ ! -d ~/codingProjects/minecraftServers/hyperion ]]; then
+    git clone https://github.com/hyperion-mc/hyperion.git ~/codingProjects/minecraftServers/hyperion
+fi
+
+if [[ ! -d ~/codingProjects/minecraftServers/oxide ]]; then
+    git clone https://github.com/T-x-T/oxide.git ~/codingProjects/minecraftServers/oxide
 fi
