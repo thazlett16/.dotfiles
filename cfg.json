@@ -67,14 +67,22 @@
         "greeter": "sddm",
         "profile": {
             "custom_settings": {
+                "Awesome": {},
                 "Hyprland": {
                     "seat_access": "polkit"
                 },
                 "KDE Plasma": {}
+                "Sway": {
+                    "seat_access": "polkit"
+                },
+                "i3-wm": {}
             },
             "details": [
+                "Awesome",
                 "Hyprland",
-                "KDE Plasma"
+                "KDE Plasma",
+                "Sway",
+                "i3-wm"
             ],
             "main": "Desktop"
         }
