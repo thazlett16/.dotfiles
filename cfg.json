@@ -1,8 +1,14 @@
 {
-    "archinstall-language": "English",
-    "audio_config": {
-        "audio": "pipewire"
+    "app_config": {
+        "audio_config": {
+            "audio": "pipewire"
+        },
+        "bluetooth_config": {
+            "enabled": true
+        }
     },
+    "archinstall-language": "English",
+    "auth_config": {},
     "bootloader": "Systemd-boot",
     "custom_commands": [],
     "hostname": "CHANGE",
@@ -28,22 +34,31 @@
     },
     "ntp": true,
     "packages": [
+        "alacritty",
         "base",
         "base-devel",
         "gcc",
         "git",
         "github-cli",
+        "go",
+        "fd",
+        "less",
         "inetutils",
+        "kitty",
         "make",
         "man-db",
         "man-pages",
         "nano",
         "neovim",
         "openssh",
+        "ripgrep",
+        "rustup",
         "starship",
         "stow",
         "tmux",
+        "unzip",
         "which",
+        "xclip",
         "zsh"
     ],
     "parallel_downloads": 0,
@@ -52,26 +67,19 @@
         "greeter": "sddm",
         "profile": {
             "custom_settings": {
-                "Awesome": {},
                 "Hyprland": {
                     "seat_access": "polkit"
                 },
-                "KDE Plasma": {},
-                "Sway": {
-                    "seat_access": "polkit"
-                },
-                "i3-wm": {}
+                "KDE Plasma": {}
             },
             "details": [
-                "Awesome",
                 "Hyprland",
-                "KDE Plasma",
-                "Sway",
-                "i3-wm"
+                "KDE Plasma"
             ],
             "main": "Desktop"
         }
     },
+    "script": null,
     "services": [],
     "swap": true,
     "timezone": "US/Central",
