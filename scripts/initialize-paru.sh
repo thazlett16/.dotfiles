@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 if [[ ! -d ~/.software ]]; then
     mkdir ~/.software
