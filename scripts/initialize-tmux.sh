@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 if [[ ! -d ~/.config/tmux ]]; then
     mkdir ~/.config/tmux

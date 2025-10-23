@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 if [[ ! -d ~/codingProjects ]]; then
     mkdir ~/codingProjects
