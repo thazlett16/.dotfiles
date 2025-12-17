@@ -18,8 +18,10 @@ nano
 neovim
 networkmanager
 networkmanager-openconnect
+ntp
 openconnect
 openssh
+reflector
 ripgrep
 starship
 stow
