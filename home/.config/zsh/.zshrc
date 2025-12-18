@@ -9,6 +9,21 @@ setopt HIST_FIND_NO_DUPS         # Do not display a previously found event.
 setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt SHARE_HISTORY             # Share history between all sessions.
 
+# hypr symlink
+if [[ ! -f ~/.config/hypr/hyprland.conf ]]; then
+    case "$hostname" in
+        rivendell)
+            ln -s ~/.config/hypr/hyprland-rivendell.conf ~/.config/hypr/hyprland.conf
+        ;;
+        shire)
+            ln -s ~/.config/hypr/hyprland-shire.conf ~/.config/hypr/hyprland.conf    
+        ;;
+        *)
+            echo "UNHANDLED HOSTNAME"
+        ;;
+    esac
+fi
+
 # Starship
 eval "$(starship init zsh)"
 
