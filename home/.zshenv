@@ -22,4 +22,4 @@ export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
 
 # Defaults
 export EDITOR="nano"
-
+export BROWSER=/usr/share/applications/microsoft-edge.desktop
