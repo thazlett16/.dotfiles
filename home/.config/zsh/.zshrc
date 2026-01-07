@@ -16,7 +16,7 @@ if [[ ! -f ~/.config/hypr/hyprland.conf ]]; then
             ln -s ~/.config/hypr/hyprland-rivendell.conf ~/.config/hypr/hyprland.conf
         ;;
         shire)
-            ln -s ~/.config/hypr/hyprland-shire.conf ~/.config/hypr/hyprland.conf    
+            ln -s ~/.config/hypr/hyprland-shire.conf ~/.config/hypr/hyprland.conf
         ;;
         *)
             echo "UNHANDLED HOSTNAME"
