@@ -12,6 +12,10 @@ if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/scratchpad ]]; then
+    git clone https://github.com/thazlett16/scratchpad.git ~/codingProjects/personalProjects/scratchpad
+fi
+
 if [[ ! -d ~/codingProjects/personalProjects/i18n-product ]]; then
     git clone https://github.com/thazlett16/i18n-product.git ~/codingProjects/personalProjects/i18n-product
 fi
