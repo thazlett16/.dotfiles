@@ -16,6 +16,7 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export MAVEN_ARGS="--settings $XDG_CONFIG_HOME/maven/settings.xml"
 export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
 export NVM_DIR="$XDG_DATA_HOME"/nvm
+export PNPM_HOME="$XDG_DATA_HOME"/pnpm
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship/starship.toml
 export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
