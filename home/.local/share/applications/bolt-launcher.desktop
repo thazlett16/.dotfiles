@@ -5,7 +5,7 @@ Name=Bolt
 GenericName=Bolt Launcher
 Comment=Third-party Jagex launcher
 Keywords=games;
-Exec=env __GLX_VENDOR_LIBRARY_NAME=mesa MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink ZINK_DESCRIPTORS=lazy ZINK_DEBUG=compact bolt
+Exec=env __GL_THREADED_OPTIMIZATIONS=0 mesa_glthread=false MESA_SHADER_CACHE_MAX_SIZE=512MB __GLX_VENDOR_LIBRARY_NAME=mesa MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink ZINK_DESCRIPTORS=lazy ZINK_DEBUG=compact bolt
 Icon=bolt-launcher
 Categories=Game;
 StartupWMClass=bolt-launcher
