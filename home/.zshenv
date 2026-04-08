@@ -20,6 +20,7 @@ export PNPM_HOME="$XDG_DATA_HOME"/pnpm
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME"/starship/starship.toml
 export STARSHIP_CACHE="$XDG_CACHE_HOME"/starship
+export VP_HOME="$XDG_DATA_HOME"/vite-plus
 
 # Defaults
 export EDITOR="nano"

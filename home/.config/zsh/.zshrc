@@ -28,7 +28,7 @@ case ":$PATH:" in
 esac
 
 # Vite+ bin (https://viteplus.dev)
-. "$HOME/.vite-plus/env"
+source "$VP_HOME/env"
 
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
