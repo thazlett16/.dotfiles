@@ -52,6 +52,14 @@ if [[ ! -d ~/codingProjects/opensource ]]; then
     mkdir ~/codingProjects/opensource
 fi
 
+if [[ ! -d ~/codingProjects/opensource/tanstarter-plus ]]; then
+    git clone https://github.com/mugnavo/tanstarter-plus.git ~/codingProjects/opensource/tanstarter-plus
+fi
+
+if [[ ! -d ~/codingProjects/opensource/tsu-stack ]]; then
+    git clone https://github.com/tsu-moe/tsu-stack.git ~/codingProjects/opensource/tsu-stack
+fi
+
 if [[ ! -d ~/codingProjects/opensource/adobe-react-spectrum ]]; then
     git clone https://github.com/adobe/react-spectrum.git ~/codingProjects/opensource/adobe-react-spectrum
 fi
