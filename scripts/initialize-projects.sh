@@ -28,6 +28,10 @@ if [[ ! -d ~/codingProjects/personalProjects/rust-playground ]]; then
     git clone https://github.com/thazlett16/rust-playground.git ~/codingProjects/personalProjects/rust-playground
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/thaz-utils ]]; then
+    git clone https://github.com/thazlett16/thaz-utils.git ~/codingProjects/personalProjects/thaz-utils
+fi
+
 if [[ ! -d ~/codingProjects/material ]]; then
     mkdir ~/codingProjects/material
 fi
@@ -42,6 +46,22 @@ fi
 
 if [[ ! -d ~/codingProjects/material/base-ui ]]; then
     git clone https://github.com/mui/base-ui.git ~/codingProjects/material/base-ui
+fi
+
+if [[ ! -d ~/codingProjects/opensource ]]; then
+    mkdir ~/codingProjects/opensource
+fi
+
+if [[ ! -d ~/codingProjects/opensource/adobe-react-spectrum ]]; then
+    git clone https://github.com/adobe/react-spectrum.git ~/codingProjects/opensource/adobe-react-spectrum
+fi
+
+if [[ ! -d ~/codingProjects/opensource/valibot ]]; then
+    git clone https://github.com/open-circle/valibot.git ~/codingProjects/opensource/valibot
+fi
+
+if [[ ! -d ~/codingProjects/opensource/ts-rest ]]; then
+    git clone https://github.com/ts-rest/ts-rest.git ~/codingProjects/opensource/ts-rest
 fi
 
 if [[ ! -d ~/codingProjects/tanStack ]]; then
