@@ -27,6 +27,9 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
+
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
