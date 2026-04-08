@@ -45,3 +45,8 @@ git clone https://github.com/thazlett16/.dotfiles.git
 9. Reboot
 
 ## All Done! Other config can be documented here as needed per my needs
+
+
+## Notes to self
+
+Folder for applications installed can be found: `/home/maethron/.local/share/applications/` and `/usr/share/applications/`
