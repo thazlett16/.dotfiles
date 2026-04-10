@@ -12,6 +12,10 @@ if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/thaz-claude-container ]]; then
+    git clone https://github.com/thazlett16/thaz-claude-container.git ~/codingProjects/personalProjects/thaz-claude-container
+fi
+
 if [[ ! -d ~/codingProjects/personalProjects/scratchpad ]]; then
     git clone https://github.com/thazlett16/scratchpad.git ~/codingProjects/personalProjects/scratchpad
 fi

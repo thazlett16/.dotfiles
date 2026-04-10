@@ -9,6 +9,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 # General environment variables
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME"/claude
 export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export GOMODCACHE="$XDG_CACHE_HOME"/go/mod
 export GOPATH="$XDG_DATA_HOME"/go
