@@ -16,6 +16,14 @@ if [[ ! -d ~/codingProjects/personalProjects/thaz-claude-container ]]; then
     git clone https://github.com/thazlett16/thaz-claude-container.git ~/codingProjects/personalProjects/thaz-claude-container
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/thazstack-boilerplate ]]; then
+    git clone https://github.com/thazlett16/thazstack-boilerplate.git ~/codingProjects/personalProjects/thazstack-boilerplate
+fi
+
+if [[ ! -d ~/codingProjects/personalProjects/thaz-utils ]]; then
+    git clone https://github.com/thazlett16/thaz-utils.git ~/codingProjects/personalProjects/thaz-utils
+fi
+
 if [[ ! -d ~/codingProjects/personalProjects/scratchpad ]]; then
     git clone https://github.com/thazlett16/scratchpad.git ~/codingProjects/personalProjects/scratchpad
 fi
@@ -30,10 +38,6 @@ fi
 
 if [[ ! -d ~/codingProjects/personalProjects/rust-playground ]]; then
     git clone https://github.com/thazlett16/rust-playground.git ~/codingProjects/personalProjects/rust-playground
-fi
-
-if [[ ! -d ~/codingProjects/personalProjects/thaz-utils ]]; then
-    git clone https://github.com/thazlett16/thaz-utils.git ~/codingProjects/personalProjects/thaz-utils
 fi
 
 if [[ ! -d ~/codingProjects/material ]]; then
