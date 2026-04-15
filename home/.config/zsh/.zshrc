@@ -30,6 +30,13 @@ esac
 # Vite+ bin (https://viteplus.dev)
 source "$VP_HOME/env"
 
+# Claude bin
+# case ":$PATH:" in
+#   *":$PNPM_HOME:"*) ;;
+#   *) export PATH="$PNPM_HOME:$PATH" ;;
+# esac
+export PATH="$HOME/.local/bin:$PATH"
+
 # autosuggestions
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
