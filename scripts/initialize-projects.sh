@@ -80,6 +80,22 @@ if [[ ! -d ~/codingProjects/opensource/ts-rest ]]; then
     git clone https://github.com/ts-rest/ts-rest.git ~/codingProjects/opensource/ts-rest
 fi
 
+if [[ ! -d ~/codingProjects/opensource/heroui ]]; then
+    git clone https://github.com/heroui-inc/heroui.git ~/codingProjects/opensource/heroui
+fi
+
+if [[ ! -d ~/codingProjects/opensource/jolly-ui ]]; then
+    git clone https://github.com/jolbol1/jolly-ui.git ~/codingProjects/opensource/jolly-ui
+fi
+
+if [[ ! -d ~/codingProjects/opensource/flowbite ]]; then
+    git clone https://github.com/themesberg/flowbite.git ~/codingProjects/opensource/flowbite
+fi
+
+if [[ ! -d ~/codingProjects/opensource/skeleton ]]; then
+    git clone https://github.com/skeletonlabs/skeleton.git ~/codingProjects/opensource/skeleton
+fi
+
 if [[ ! -d ~/codingProjects/tanStack ]]; then
     mkdir ~/codingProjects/tanStack
 fi
