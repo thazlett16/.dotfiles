@@ -21,6 +21,7 @@ networkmanager-openconnect
 ntp
 openconnect
 openssh
+pacman-contrib
 reflector
 ripgrep
 starship
