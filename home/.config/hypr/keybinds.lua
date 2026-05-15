@@ -1,4 +1,4 @@
-local programs = require("programs")
+local programs = require("util.programs")
 
 local mod = "SUPER"
 

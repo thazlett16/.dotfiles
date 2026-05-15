@@ -19,7 +19,7 @@ MESA_LOADER_DRIVER_OVERRIDE=zink
 __GLX_VENDOR_LIBRARY_NAME=nvidia
 __NV_PRIME_RENDER_OFFLOAD=1
 
-flatpak override --user --show com.adamcake.Bolt                                                                                                         
+flatpak override --user --show com.adamcake.Bolt
 [Environment]
 MESA_LOADER_DRIVER_OVERRIDE=zink
 __GLX_VENDOR_LIBRARY_NAME=mesa
