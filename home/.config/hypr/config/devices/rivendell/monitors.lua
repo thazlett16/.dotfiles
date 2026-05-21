@@ -6,6 +6,7 @@ hl.monitor({
     scale     = "1",
     transform = 0,
     disabled  = false,
+    -- mirror    = "HDMI-A-1",
 })
 hl.monitor({
     output    = "HDMI-A-1",
@@ -22,4 +23,5 @@ hl.monitor({
     scale     = "1",
     transform = 0,
     disabled  = false,
+    -- mirror    = "HDMI-A-1",
 })
