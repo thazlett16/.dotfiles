@@ -1,13 +1,3 @@
--- Autostart
-hl.on("hyprland.start", function()
-    hl.exec_cmd("hyprpaper")
-    hl.exec_cmd("waybar")
-end)
-
--- Environment variables
-hl.env("XCURSOR_SIZE",    "24")
-hl.env("HYPRCURSOR_SIZE", "24")
-
 -- Settings
 hl.config({
     -- General

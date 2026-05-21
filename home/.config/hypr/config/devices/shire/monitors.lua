@@ -5,5 +5,5 @@ hl.monitor({
     position  = "auto",
     scale     = "auto",
     transform = 0,
-    disabled  = false,
+    -- disabled  = false,
 })
