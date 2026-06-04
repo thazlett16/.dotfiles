@@ -2,6 +2,7 @@ alacritty
 base
 base-devel
 docker
+docker-buildx
 docker-compose
 fd
 fzf
