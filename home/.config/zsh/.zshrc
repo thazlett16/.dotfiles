@@ -20,21 +20,30 @@ bindkey "^[[3~" delete-char
 eval "$(starship init zsh)"
 
 # Coding stuff
-source /usr/share/nvm/init-nvm.sh
+if [[ -d /usr/share/nvm ]]; then
+  source /usr/share/nvm/init-nvm.sh
+fi
 
+# PNPM
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
 # Vite+ bin (https://viteplus.dev)
-source "$VP_HOME/env"
+if [[ -d "$VP_HOME/env" ]]; then
+  source "$VP_HOME/env"
+fi
 
 # Claude bin
 export PATH="$HOME/.local/bin:$PATH"
 
 # autosuggestions
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [[ -d /usr/share/zsh/plugins/zsh-autosuggestions ]]; then
+  source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
 
 # syntax highlighting
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [[ -d /usr/share/zsh/plugins/zsh-syntax-highlighting ]]; then
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
