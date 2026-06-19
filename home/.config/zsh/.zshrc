@@ -31,7 +31,7 @@ case ":$PATH:" in
 esac
 
 # Vite+ bin (https://viteplus.dev)
-if [[ -d "$VP_HOME/env" ]]; then
+if [[ -f "$VP_HOME/env" ]]; then
   source "$VP_HOME/env"
 fi
 
