@@ -1,4 +1,6 @@
 #!/bin/bash
 
-VERSION=$(curl -s https://curseforge.overwolf.com/electron/linux/latest-linux.yml | grep -m1 '^version:' | awk '{print $2}')
-echo "Latest CurseForge Version: ${VERSION}"
+sudo pacman -Rns curseforge
+
+#sudo pacman -Rns paru paru-debug yay yay-debug
+#pacman -Qm | grep -E 'paru|yay'
