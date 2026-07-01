@@ -34,8 +34,6 @@ git clone https://github.com/thazlett16/.dotfiles.git
 ~/.dotfiles/scripts/initialize-projects.sh
 ~/.dotfiles/scripts/initialize-obsidian.sh
 ~/.dotfiles/scripts/initialize-rust.sh
-~/.dotfiles/scripts/initialize-paru.sh
-~/.dotfiles/scripts/initialize-yay.sh
 ~/.dotfiles/scripts/install-packages.sh
 ~/.dotfiles/scripts/initialize-home.sh
 ~/.dotfiles/scripts/initialize-zsh.sh

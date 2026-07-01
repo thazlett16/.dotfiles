@@ -1,3 +1,11 @@
+# Paths for my local managed packages to track
+
+- /usr/share/licenses/
+- /usr/share/applications/
+- /home/maethron/.local/share/applications/
+- /opt/CurseForge/
+- /home/maethron/.local/share/managed/curseforge/
+
 
 # Original
 Exec=env __GL_THREADED_OPTIMIZATIONS=0 mesa_glthread=false MESA_SHADER_CACHE_MAX_SIZE=512MB __GLX_VENDOR_LIBRARY_NAME=mesa MESA_LOADER_DRIVER_OVERRIDE=zink GALLIUM_DRIVER=zink ZINK_DESCRIPTORS=lazy ZINK_DEBUG=compact bolt

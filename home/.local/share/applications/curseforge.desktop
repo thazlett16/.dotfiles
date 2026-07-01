@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=CurseForge
+Exec=/usr/bin/CurseForge %U
+Terminal=false
+Type=Application
+Icon=curseforge
+StartupWMClass=CurseForge
+Comment=CurseForge App
+MimeType=x-scheme-handler/curseforge;x-scheme-handler/cfauth;x-scheme-handler/curseforge-checkout;
+Categories=Utility;
