@@ -8,10 +8,20 @@ url='https://brave.com'
 arch=('x86_64')
 depends=(
     'alsa-lib'
+    'ca-certificates'
+    'curl'
+    'dbus'
+    'expat'
     'gtk3'
+    'libcups'
     'libxss'
+    'libxtst'
+    'mesa'
     'nss'
-    'ttf-font'
+    'ttf-liberation'
+    'vulkan-icd-loader'
+    'wget'
+    'xdg-utils'
 )
 options=(
     '!emptydirs'

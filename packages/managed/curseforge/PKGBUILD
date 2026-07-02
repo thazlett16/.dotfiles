@@ -7,14 +7,19 @@ pkgrel=1
 url='https://curseforge.com'
 arch=('x86_64')
 depends=(
+    'alsa-lib'
     'dbus'
     'expat'
     'gcc-libs'
-    'glib2'
-    'glibc'
-    'hicolor-icon-theme'
+    'gtk3'
+    'libnotify'
+    'libsecret'
+    'libxss'
+    'libxtst'
+    'mesa'
+    'nss'
     'systemd-libs'
-    'zlib'
+    'xdg-utils'
 )
 options=(
     '!strip'
