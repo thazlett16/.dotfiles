@@ -1,0 +1,58 @@
+# Used to install: https://aur.archlinux.org/spotify.git
+
+pkgname=spotify
+pkgdesc='A proprietary music streaming service'
+epoch=1
+pkgver=1.2.92.147.g5b8f9367
+pkgrel=1
+url='https://www.spotify.com'
+arch=('x86_64')
+depends=(
+    'alsa-lib'
+    'dbus'
+    'expat'
+    'gcc-libs'
+    'gtk3'
+    'libatomic'
+    'libayatana-appindicator'
+    'libxss'
+    'libxtst'
+    'mesa'
+    'nss'
+    'systemd-libs'
+    'xdg-utils'
+)
+options=(
+    '!emptydirs'
+    '!strip'
+    '!debug'
+)
+source=(
+    "spotify-client_${pkgver}_amd64.deb::https://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${pkgver}_amd64.deb"
+    'LICENSE'
+)
+sha256sums=(
+    '1903de14f55a94af3fe52d1b05ff76c40f1ec095355bb18bc2f389381e0be105'
+    '4e8bea31ca27e16cac9c9dcd8f6ec27e1f82b45de86d6fee7a1e77e23f884b92'
+)
+license=(
+    'LicenseRef-spotify'
+)
+
+package() {
+    bsdtar -xf 'data.tar.gz' -C "${pkgdir}/"
+
+    for size in '16' '24' '32' '48' '64' '128' '256'; do
+        install -Dm644 "${pkgdir}/usr/share/spotify/icons/spotify-linux-${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/spotify-client.png"
+    done
+
+    # Remove the duplicated Icons now that we copied them
+    rm -rf "${pkgdir}/usr/share/spotify/icons"
+
+    # Register the desktop entry (the deb only ships it under /usr/share/spotify
+    # and relies on a postinst xdg-desktop-menu call we don't run)
+    install -Dm644 "${pkgdir}/usr/share/spotify/spotify.desktop" "${pkgdir}/usr/share/applications/spotify.desktop"
+
+    # Add Licenses
+    install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/spotify/LICENSE"
+}

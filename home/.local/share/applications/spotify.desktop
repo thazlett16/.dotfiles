@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=Spotify
+GenericName=Music Player
+Comment=Play music from Spotify
+StartupNotify=true
+StartupWMClass=spotify
+TryExec=spotify
+Exec=/usr/bin/spotify %U
+Terminal=false
+Icon=spotify-client
+Type=Application
+Categories=Audio;Music;Player;AudioVideo;
+MimeType=x-scheme-handler/spotify;

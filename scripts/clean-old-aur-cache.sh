@@ -11,3 +11,6 @@
 
 #rm -rf ~/.config/microsoft-edge
 #rm -rf ~/.cache/microsoft-edge
+
+#rm -rf ~/.config/spotify
+#rm -rf ~/.cache/spotify

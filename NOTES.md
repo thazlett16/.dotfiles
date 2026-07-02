@@ -12,14 +12,16 @@
 - /home/maethron/.local/share/managed/brave/
 - /opt/microsoft/msedge/
 - /home/maethron/.local/share/managed/microsoft-edge/
+- /usr/share/spotify/
+- /home/maethron/.local/share/managed/spotify/
 
 Initial Prompt:
 ```text
-Sweet just committed all changes now for chrome. Lets continue this exercise with brave browser. Take the same patterns that we have done with the last 2 commits and now work on brave.
-
-I have the old makepkg checked out here: @~/aurProjects/brave-bin/PKGBUILD
-
-Don't just copy that one but lets do some research and follow the same pattern locally
+Thanks! Just committed all changes now for edge. Lets continue this exercise with spotify. Take the same patterns that we have done with the last 2 commits and now work on spotify.                                       
+                                                                                                                                                                                                                             
+  I have the old makepkg checked out here: @~/aurProjects/spotify/                                                                                                                                                           
+                                                                                                                                                                                                                             
+  Don't just copy that one but lets do some research and follow the same patterns locally that we have been following with out other projects
 ```
 
 
