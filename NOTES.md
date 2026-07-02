@@ -18,6 +18,8 @@
 - /home/maethron/.local/share/minecraft-launcher/ (redirected --workDir, replaces ~/.minecraft)
 - /opt/Bruno/
 - /home/maethron/.local/share/managed/bruno/
+- /opt/jetbrains-toolbox/
+- /home/maethron/.local/share/managed/jetbrains-toolbox/
 
 Initial Prompt:
 ```text

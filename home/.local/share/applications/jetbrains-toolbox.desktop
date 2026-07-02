@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=JetBrains Toolbox
+Comment=Manage all your JetBrains Projects and Tools
+StartupNotify=false
+StartupWMClass=jetbrains-toolbox
+TryExec=jetbrains-toolbox
+Exec=/usr/bin/jetbrains-toolbox %u
+Terminal=false
+Icon=jetbrains-toolbox
+Categories=Development;
+MimeType=x-scheme-handler/jetbrains;
+X-GNOME-Autostart-Delay=10
+X-GNOME-Autostart-enabled=true
+X-KDE-autostart-after=panel
+X-MATE-Autostart-Delay=10

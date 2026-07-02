@@ -37,3 +37,11 @@
 
 #rm -rf ~/.config/bruno
 #rm -rf ~/.cache/bruno
+
+# ~/.config/JetBrains, ~/.cache/JetBrains, and ~/.local/share/JetBrains are
+# shared across every JetBrains product (Toolbox and each installed IDE), so
+# only the Toolbox-scoped subdirectory is safe to remove here -- never the
+# shared parent, which would wipe IDE settings/caches too.
+#rm -rf ~/.config/JetBrains/Toolbox
+#rm -rf ~/.cache/JetBrains/Toolbox
+#rm -rf ~/.local/share/JetBrains/Toolbox

@@ -1,0 +1,48 @@
+# Used to install: https://aur.archlinux.org/jetbrains-toolbox.git
+
+pkgname=jetbrains-toolbox
+pkgdesc='Manage all your JetBrains Projects and Tools'
+pkgver=3.5.0.84344
+pkgrel=1
+url='https://www.jetbrains.com/toolbox/'
+arch=('x86_64')
+depends=(
+    'alsa-lib'
+    'fontconfig'
+    'libxkbcommon'
+    'libxrender'
+    'libxtst'
+    'mesa'
+    'org.freedesktop.secrets'
+    'xdg-utils'
+)
+options=(
+    '!strip'
+    '!debug'
+)
+source=(
+    "jetbrains-toolbox-${pkgver}.tar.gz::https://download.jetbrains.com/toolbox/jetbrains-toolbox-${pkgver}.tar.gz"
+    'jetbrains-toolbox.desktop'
+    'icon.svg'
+    'LICENSE'
+)
+sha256sums=(
+    '1bbc5baa8ab664a83153424eb4831786e86628bfc024c4f5a675f45a534678ef'
+    'b2fbeff1ac443a95a6e29cf91e045c6cd70e3f655af8ce2a17353b25cc7f806a'
+    '4a6b4b801954017402e47b40b7246a71b1c128ca352efe459322b3f3699a5813'
+    'c37db68dbedb20617a23cf1299cd95e7f114f019ff7f44877409cef916ff6ab1'
+)
+license=(
+    'custom:jetbrains'
+)
+
+package() {
+    install -dm755 "${pkgdir}/usr/bin" "${pkgdir}/opt/${pkgname}"
+    install -Dm644 "${srcdir}/${pkgname}.desktop" "${pkgdir}/usr/share/applications/${pkgname}.desktop"
+    install -Dm644 'icon.svg' "${pkgdir}/usr/share/pixmaps/${pkgname}.svg"
+    install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+
+    cp -ar "${srcdir}/${pkgname}-${pkgver}/bin/"* "${pkgdir}/opt/${pkgname}/"
+
+    ln -s "/opt/${pkgname}/${pkgname}" "${pkgdir}/usr/bin/${pkgname}"
+}
