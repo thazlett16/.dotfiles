@@ -8,3 +8,6 @@
 
 #rm -rf ~/.config/BraveSoftware
 #rm -rf ~/.cache/BraveSoftware
+
+#rm -rf ~/.config/microsoft-edge
+#rm -rf ~/.cache/microsoft-edge

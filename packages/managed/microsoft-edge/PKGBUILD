@@ -1,0 +1,59 @@
+# Used to install: https://aur.archlinux.org/microsoft-edge-stable-bin.git
+
+pkgname=microsoft-edge
+pkgdesc='Microsoft Edge Browser Stable'
+pkgver=149.0.4022.98
+pkgrel=1
+url='https://www.microsoft.com/edge'
+arch=('x86_64')
+depends=(
+    'alsa-lib'
+    'ca-certificates'
+    'curl'
+    'dbus'
+    'expat'
+    'gtk3'
+    'libcups'
+    'libxss'
+    'libxtst'
+    'mesa'
+    'nss'
+    'ttf-liberation'
+    'vulkan-icd-loader'
+    'wget'
+    'xdg-utils'
+)
+options=(
+    '!emptydirs'
+    '!strip'
+    '!debug'
+)
+source=(
+    "microsoft-edge-stable_${pkgver}-1_amd64.deb::https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_${pkgver}-1_amd64.deb"
+    'LICENSE.pdf'
+)
+sha256sums=(
+    'b4ce51b1eb017770b2682ae45daff09f9385d399373a5470cca1b383697136d2'
+    'edf2ed596eb068f168287fc76aa713ad5e0afb59f0a0a47a4f29c0c124ade15e'
+)
+license=(
+    'LicenseRef-microsoft-edge'
+)
+
+package() {
+    bsdtar -xf 'data.tar.xz' -C "${pkgdir}/"
+
+    for size in '16' '24' '32' '48' '64' '128' '256'; do
+        install -Dm644 "${pkgdir}/opt/microsoft/msedge/product_logo_${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/microsoft-edge.png"
+    done
+
+    # Remove the duplicated Icons now that we copied them
+    rm -rf "${pkgdir}/opt/microsoft/msedge"/product_logo_*.png
+
+    # Remove CRON
+    rm -rf "${pkgdir}/etc/cron.daily"
+    rm -rf "${pkgdir}/opt/microsoft/msedge/cron"
+
+    # Add Licenses
+    install -Dm644 'LICENSE.pdf' "${pkgdir}/usr/share/licenses/microsoft-edge/LICENSE.pdf"
+}

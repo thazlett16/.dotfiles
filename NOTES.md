@@ -10,6 +10,8 @@
 - /home/maethron/.local/share/managed/google-chrome/
 - /opt/brave.com/brave/
 - /home/maethron/.local/share/managed/brave/
+- /opt/microsoft/msedge/
+- /home/maethron/.local/share/managed/microsoft-edge/
 
 Initial Prompt:
 ```text
