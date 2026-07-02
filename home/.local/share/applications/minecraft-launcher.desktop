@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Minecraft Launcher
+GenericName=Minecraft Launcher
+Comment=Official Minecraft Launcher
+StartupNotify=true
+StartupWMClass=minecraft-launcher
+TryExec=minecraft-launcher.sh
+Exec=/usr/bin/minecraft-launcher.sh
+Terminal=false
+Icon=minecraft-launcher
+Categories=Game;

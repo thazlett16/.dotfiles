@@ -14,6 +14,8 @@
 - /home/maethron/.local/share/managed/microsoft-edge/
 - /usr/share/spotify/
 - /home/maethron/.local/share/managed/spotify/
+- /home/maethron/.local/share/managed/minecraft-launcher/
+- /home/maethron/.local/share/minecraft-launcher/ (redirected --workDir, replaces ~/.minecraft)
 
 Initial Prompt:
 ```text
