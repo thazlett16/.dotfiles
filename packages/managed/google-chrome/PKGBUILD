@@ -1,7 +1,7 @@
 # Used to install: https://aur.archlinux.org/google-chrome.git
 
 pkgname=google-chrome
-pkgdesc='The popular web browser by Google (Stable Channel)'
+pkgdesc='Google Chrome Browser Stable'
 pkgver=150.0.7871.46
 pkgrel=1
 url='https://www.google.com/chrome'

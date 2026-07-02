@@ -1,0 +1,47 @@
+# Used to install: https://aur.archlinux.org/brave-bin.git
+
+pkgname=brave
+pkgdesc='Brave Browser Stable'
+pkgver=1.91.180
+pkgrel=1
+url='https://brave.com'
+arch=('x86_64')
+depends=(
+    'alsa-lib'
+    'gtk3'
+    'libxss'
+    'nss'
+    'ttf-font'
+)
+options=(
+    '!emptydirs'
+    '!strip'
+    '!debug'
+)
+source=(
+    "brave-browser_${pkgver}_amd64.deb::https://github.com/brave/brave-browser/releases/download/v${pkgver}/brave-browser_${pkgver}_amd64.deb"
+)
+sha256sums=(
+    '98cd923a7e95d4a409123c51d0a1f595724c2d2ce9c7f222643792ac9b4816dd'
+)
+license=(
+    'MPL2'
+)
+
+package() {
+    bsdtar -xf 'data.tar.xz' -C "${pkgdir}/"
+
+    for size in '16' '24' '32' '48' '64' '128' '256'; do
+        install -Dm644 "${pkgdir}/opt/brave.com/brave/product_logo_${size}.png" "${pkgdir}/usr/share/icons/hicolor/${size}x${size}/apps/brave-desktop.png"
+    done
+
+    # Remove the duplicated Icons now that we copied them
+    rm -rf "${pkgdir}/opt/brave.com/brave"/product_logo_*.png
+
+    # Remove CRON
+    rm -rf "${pkgdir}/etc/cron.daily"
+    rm -rf "${pkgdir}/opt/brave.com/brave/cron"
+
+    # Add Licenses
+    install -Dm644 "${pkgdir}/opt/brave.com/brave/LICENSE" "${pkgdir}/usr/share/licenses/brave/LICENSE"
+}

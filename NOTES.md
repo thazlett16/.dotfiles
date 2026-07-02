@@ -8,6 +8,17 @@
 - /home/maethron/.local/share/managed/curseforge/
 - /opt/google/chrome/
 - /home/maethron/.local/share/managed/google-chrome/
+- /opt/brave.com/brave/
+- /home/maethron/.local/share/managed/brave/
+
+Initial Prompt:
+```text
+Sweet just committed all changes now for chrome. Lets continue this exercise with brave browser. Take the same patterns that we have done with the last 2 commits and now work on brave.
+
+I have the old makepkg checked out here: @~/aurProjects/brave-bin/PKGBUILD
+
+Don't just copy that one but lets do some research and follow the same pattern locally
+```
 
 
 # Original
