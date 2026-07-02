@@ -1,10 +1,13 @@
 # Paths for my local managed packages to track
 
+- /usr/bin/
 - /usr/share/licenses/
 - /usr/share/applications/
 - /home/maethron/.local/share/applications/
 - /opt/CurseForge/
 - /home/maethron/.local/share/managed/curseforge/
+- /opt/google/chrome/
+- /home/maethron/.local/share/managed/google-chrome/
 
 
 # Original

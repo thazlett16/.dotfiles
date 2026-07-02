@@ -1,22 +1,25 @@
 # Used to install: https://aur.archlinux.org/curseforge.git
 
-pkgname=CurseForge
-pkgdesc="CurseForge desktop client"
+pkgname=curseforge
+pkgdesc='CurseForge desktop client'
 pkgver=1.310.1_35445
 pkgrel=1
-url="https://curseforge.com"
+url='https://curseforge.com'
 arch=('x86_64')
 depends=(
-    dbus
-    expat
-    gcc-libs
-    glib2
-    glibc
-    hicolor-icon-theme
-    systemd-libs
-    zlib
+    'dbus'
+    'expat'
+    'gcc-libs'
+    'glib2'
+    'glibc'
+    'hicolor-icon-theme'
+    'systemd-libs'
+    'zlib'
 )
-options=(!strip !debug)
+options=(
+    '!strip'
+    '!debug'
+)
 source=(
     "CurseForge_${pkgver/_/-}_amd64.deb::https://curseforge.overwolf.com/electron/linux/CurseForge_${pkgver/_/-}_amd64.deb"
     'LICENSE'
@@ -28,16 +31,18 @@ sha256sums=(
 license=(
     'LicenseRef-overwolf'
     'MIT'
-    'LicenseRef-chromium-licenses'
+    'LicenseRef-chromium'
 )
 
 package() {
-    bsdtar -xf data.tar.xz -C "${pkgdir}/"
+    bsdtar -xf 'data.tar.xz' -C "${pkgdir}/"
 
+    # Add /usr/bin option entry
     install -dm755 "${pkgdir}/usr/bin"
-    ln -s "/opt/${pkgname}/curseforge" "${pkgdir}/usr/bin/${pkgname}"
+    ln -s "/opt/CurseForge/curseforge" "${pkgdir}/usr/bin/CurseForge"
 
-    install -Dm644 "LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/CURSEFORGE-LICENSE"
-    install -Dm644 "${pkgdir}/opt/${pkgname}/LICENSE.electron.txt" -t "${pkgdir}/usr/share/licenses/${pkgname}"
-    install -Dm644 "${pkgdir}/opt/${pkgname}/LICENSES.chromium.html" -t "${pkgdir}/usr/share/licenses/${pkgname}"
+    # Add Licenses
+    install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/CurseForge/CURSEFORGE-LICENSE"
+    install -Dm644 "${pkgdir}/opt/CurseForge/LICENSE.electron.txt" -t "${pkgdir}/usr/share/licenses/CurseForge"
+    install -Dm644 "${pkgdir}/opt/CurseForge/LICENSES.chromium.html" -t "${pkgdir}/usr/share/licenses/CurseForge"
 }

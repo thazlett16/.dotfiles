@@ -1,5 +1,58 @@
 #!/bin/bash
 
+if [[ ! -d ~/aurProjects ]]; then
+    mkdir ~/aurProjects
+fi
+
+if [[ ! -d ~/aurProjects/curseforge ]]; then
+    git clone https://aur.archlinux.org/curseforge.git ~/aurProjects/curseforge
+#    (cd ~/aurProjects/curseforge && makepkg -c --needed --noconfirm)
+fi
+
+if [[ ! -d ~/aurProjects/brave-bin ]]; then
+    git clone https://aur.archlinux.org/brave-bin.git ~/aurProjects/brave-bin
+fi
+
+if [[ ! -d ~/aurProjects/bruno-bin ]]; then
+    git clone https://aur.archlinux.org/bruno-bin.git ~/aurProjects/bruno-bin
+fi
+
+if [[ ! -d ~/aurProjects/google-chrome ]]; then
+    git clone https://aur.archlinux.org/google-chrome.git ~/aurProjects/google-chrome
+fi
+
+if [[ ! -d ~/aurProjects/jetbrains-toolbox ]]; then
+    git clone https://aur.archlinux.org/jetbrains-toolbox.git ~/aurProjects/jetbrains-toolbox
+fi
+
+if [[ ! -d ~/aurProjects/microsoft-edge-stable-bin ]]; then
+    git clone https://aur.archlinux.org/microsoft-edge-stable-bin.git ~/aurProjects/microsoft-edge-stable-bin
+fi
+
+if [[ ! -d ~/aurProjects/minecraft-launcher ]]; then
+    git clone https://aur.archlinux.org/minecraft-launcher.git ~/aurProjects/minecraft-launcher
+fi
+
+if [[ ! -d ~/aurProjects/spotify ]]; then
+    git clone https://aur.archlinux.org/spotify.git ~/aurProjects/spotify
+fi
+
+if [[ ! -d ~/aurProjects/paru ]]; then
+    git clone https://aur.archlinux.org/paru.git ~/aurProjects/paru
+fi
+
+if [[ ! -d ~/aurProjects/paru-debug ]]; then
+    git clone https://aur.archlinux.org/paru-debug.git ~/aurProjects/paru-debug
+fi
+
+if [[ ! -d ~/aurProjects/yay ]]; then
+    git clone https://aur.archlinux.org/yay.git ~/aurProjects/yay
+fi
+
+if [[ ! -d ~/aurProjects/yay-debug ]]; then
+    git clone https://aur.archlinux.org/yay-debug.git ~/aurProjects/yay-debug
+fi
+
 if [[ ! -d ~/codingProjects ]]; then
     mkdir ~/codingProjects
 fi
