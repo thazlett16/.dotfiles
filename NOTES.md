@@ -16,6 +16,8 @@
 - /home/maethron/.local/share/managed/spotify/
 - /home/maethron/.local/share/managed/minecraft-launcher/
 - /home/maethron/.local/share/minecraft-launcher/ (redirected --workDir, replaces ~/.minecraft)
+- /opt/Bruno/
+- /home/maethron/.local/share/managed/bruno/
 
 Initial Prompt:
 ```text

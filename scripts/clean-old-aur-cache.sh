@@ -34,3 +34,6 @@
 #rm -rf ~/.minecraft/logs
 #rm -f ~/.minecraft/bootstrap_log*.txt
 #rm -f ~/.minecraft/launcher_log*.txt
+
+#rm -rf ~/.config/bruno
+#rm -rf ~/.cache/bruno

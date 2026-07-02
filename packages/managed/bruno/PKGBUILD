@@ -1,0 +1,45 @@
+# Used to install: https://aur.archlinux.org/bruno-bin.git
+
+pkgname=bruno
+pkgdesc='Opensource API Client for Exploring and Testing APIs'
+pkgver=3.5.0
+pkgrel=1
+url='https://www.usebruno.com'
+arch=('x86_64')
+depends=(
+    'alsa-lib'
+    'gtk3'
+    'libnotify'
+    'libsecret'
+    'nss'
+    'xdg-utils'
+)
+options=(
+    '!strip'
+    '!debug'
+)
+source=(
+    "bruno_${pkgver}_amd64_linux.deb::https://github.com/usebruno/bruno/releases/download/v${pkgver}/bruno_${pkgver}_amd64_linux.deb"
+    'LICENSE'
+)
+sha256sums=(
+    '53a39691e4525dca8f84e0e5a6dc0e890835f36e3b8a2cadf792583aa3c82e65'
+    '8891070a847e5047bf77d38d88d7dfbab1beab41e37c802b9f5b23f2bbb9c7be'
+)
+license=(
+    'MIT'
+    'LicenseRef-chromium'
+)
+
+package() {
+    bsdtar -xf 'data.tar.xz' -C "${pkgdir}/"
+
+    # Add /usr/bin entry point
+    install -dm755 "${pkgdir}/usr/bin"
+    ln -s "/opt/Bruno/bruno" "${pkgdir}/usr/bin/bruno"
+
+    # Add Licenses
+    install -Dm644 'LICENSE' "${pkgdir}/usr/share/licenses/bruno/LICENSE"
+    install -Dm644 "${pkgdir}/opt/Bruno/LICENSE.electron.txt" -t "${pkgdir}/usr/share/licenses/bruno"
+    install -Dm644 "${pkgdir}/opt/Bruno/LICENSES.chromium.html" -t "${pkgdir}/usr/share/licenses/bruno"
+}

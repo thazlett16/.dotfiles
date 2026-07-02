@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Bruno
+GenericName=API Client
+Comment=Opensource API Client for Exploring and Testing APIs
+StartupNotify=true
+StartupWMClass=Bruno
+TryExec=bruno
+Exec=/usr/bin/bruno %U
+Terminal=false
+Icon=bruno
+Categories=Development;
+MimeType=x-scheme-handler/bruno;
