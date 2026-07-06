@@ -2,7 +2,7 @@
 
 pkgname=brave
 pkgdesc='Brave Browser Stable'
-pkgver=1.91.180
+pkgver=1.92.134
 pkgrel=1
 url='https://brave.com'
 arch=('x86_64')
@@ -32,7 +32,7 @@ source=(
     "brave-browser_${pkgver}_amd64.deb::https://github.com/brave/brave-browser/releases/download/v${pkgver}/brave-browser_${pkgver}_amd64.deb"
 )
 sha256sums=(
-    '98cd923a7e95d4a409123c51d0a1f595724c2d2ce9c7f222643792ac9b4816dd'
+    '4f703f7a398b90845819673c197426bc8019bd0170604ca1409c6cb0d0da9614'
 )
 license=(
     'MPL2'
