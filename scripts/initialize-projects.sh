@@ -85,6 +85,18 @@ if [[ ! -d ~/codingProjects/thazCollective/oxlint-config ]]; then
     git clone https://github.com/thaz-collective/oxlint-config.git ~/codingProjects/thazCollective/oxlint-config
 fi
 
+if [[ ! -d ~/codingProjects/thazCollective/temporal-util ]]; then
+    git clone https://github.com/thaz-collective/temporal-util.git ~/codingProjects/thazCollective/temporal-util
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/network-util ]]; then
+    git clone https://github.com/thaz-collective/network-util.git ~/codingProjects/thazCollective/network-util
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/form-util ]]; then
+    git clone https://github.com/thaz-collective/form-util.git ~/codingProjects/thazCollective/form-util
+fi
+
 if [[ ! -d ~/codingProjects/thazCollective/ui-starter ]]; then
     git clone https://github.com/thaz-collective/ui-starter.git ~/codingProjects/thazCollective/ui-starter
 fi
