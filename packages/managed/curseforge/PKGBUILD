@@ -1,8 +1,9 @@
 # Used to install: https://aur.archlinux.org/curseforge.git
+# curl -sSf 'https://curseforge.overwolf.com/electron/linux/CurseForge_1.312.1-36055_amd64.deb' | sha256sum
 
 pkgname=curseforge
 pkgdesc='CurseForge desktop client'
-pkgver=1.310.1_35445
+pkgver=1.312.1_36055
 pkgrel=1
 url='https://curseforge.com'
 arch=('x86_64')
@@ -30,7 +31,7 @@ source=(
     'LICENSE'
 )
 sha256sums=(
-    '9ad44cbbccb5008223f6e09fd97f28878d8a4454b4eeec83164f2708a0d289ba'
+    'b60fc93fed8c8203621006d4965c3d907304682f06565841eed945d62b9d115e'
     '135c7ffeb81f4a7ee95a5879651b679e0d1ef9d13c7aa7c262386ad97b48d62f'
 )
 license=(

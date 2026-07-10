@@ -1,8 +1,9 @@
 # Used to install: https://aur.archlinux.org/google-chrome.git
+# curl -sSf https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_150.0.7871.114-1_amd64.deb | sha256sum
 
 pkgname=google-chrome
 pkgdesc='Google Chrome Browser Stable'
-pkgver=150.0.7871.46
+pkgver=150.0.7871.114
 pkgrel=1
 url='https://www.google.com/chrome'
 arch=('x86_64')
@@ -33,7 +34,7 @@ source=(
     'eula_text.html'
 )
 sha256sums=(
-    '69b40139fb73a021a749f32fcde0853fb1781b6f3a8b3caf173ad8f6747faa7c'
+    '0f19e68dca574849632e25229f15853d2beac33fa06498feed43f34628bc2d53'
     'e93c01576427cad9099f2cf0df0be70d0a2cc0a3a66c743318b2138aa7c4ed93'
 )
 license=(
