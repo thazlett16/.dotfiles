@@ -61,6 +61,42 @@ if [[ ! -d ~/codingProjects/workProjects ]]; then
     mkdir ~/codingProjects/workProjects
 fi
 
+if [[ ! -d ~/codingProjects/thazCollective ]]; then
+    mkdir ~/codingProjects/thazCollective
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/skills ]]; then
+    git clone https://github.com/thaz-collective/skills.git ~/codingProjects/thazCollective/skills
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/typescript-config ]]; then
+    git clone https://github.com/thaz-collective/typescript-config.git ~/codingProjects/thazCollective/typescript-config
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/oxfmt-config ]]; then
+    git clone https://github.com/thaz-collective/oxfmt-config.git ~/codingProjects/thazCollective/oxfmt-config
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/custom-lint-rules ]]; then
+    git clone https://github.com/thaz-collective/custom-lint-rules.git ~/codingProjects/thazCollective/custom-lint-rules
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/oxlint-config ]]; then
+    git clone https://github.com/thaz-collective/oxlint-config.git ~/codingProjects/thazCollective/oxlint-config
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/ui-starter ]]; then
+    git clone https://github.com/thaz-collective/ui-starter.git ~/codingProjects/thazCollective/ui-starter
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/monorepo-router-template ]]; then
+    git clone https://github.com/thaz-collective/monorepo-router-template.git ~/codingProjects/thazCollective/monorepo-router-template
+fi
+
+if [[ ! -d ~/codingProjects/thazCollective/monorepo-start-template ]]; then
+    git clone https://github.com/thaz-collective/monorepo-start-template.git ~/codingProjects/thazCollective/monorepo-start-template
+fi
+
 if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
@@ -113,12 +149,64 @@ if [[ ! -d ~/codingProjects/opensource ]]; then
     mkdir ~/codingProjects/opensource
 fi
 
+if [[ ! -d ~/codingProjects/opensource/oxc-project-oxc ]]; then
+    git clone https://github.com/oxc-project/oxc ~/codingProjects/opensource/oxc-project-oxc
+fi
+
+if [[ ! -d ~/codingProjects/opensource/vite ]]; then
+    git clone https://github.com/vitejs/vite ~/codingProjects/opensource/vite
+fi
+
+if [[ ! -d ~/codingProjects/opensource/vitest ]]; then
+    git clone https://github.com/vitest-dev/vitest ~/codingProjects/opensource/vitest
+fi
+
+if [[ ! -d ~/codingProjects/opensource/rolldown ]]; then
+    git clone https://github.com/rolldown/rolldown ~/codingProjects/opensource/rolldown
+fi
+
+if [[ ! -d ~/codingProjects/opensource/tsdown ]]; then
+    git clone https://github.com/rolldown/tsdown ~/codingProjects/opensource/tsdown
+fi
+
+if [[ ! -d ~/codingProjects/opensource/vite-plus ]]; then
+    git clone https://github.com/voidzero-dev/vite-plus ~/codingProjects/opensource/vite-plus
+fi
+
+if [[ ! -d ~/codingProjects/opensource/devcontainers-cli ]]; then
+    git clone https://github.com/devcontainers/cli ~/codingProjects/opensource/devcontainers-cli
+fi
+
+if [[ ! -d ~/codingProjects/opensource/github-gitignore ]]; then
+    git clone https://github.com/github/gitignore ~/codingProjects/opensource/github-gitignore
+fi
+
+if [[ ! -d ~/codingProjects/opensource/tanstarter ]]; then
+    git clone https://github.com/mugnavo/tanstarter.git ~/codingProjects/opensource/tanstarter
+fi
+
+if [[ ! -d ~/codingProjects/opensource/create-mugnavo ]]; then
+    git clone https://github.com/mugnavo/create-mugnavo.git ~/codingProjects/opensource/create-mugnavo
+fi
+
+if [[ ! -d ~/codingProjects/opensource/tanstarter-monorepo ]]; then
+    git clone https://github.com/mugnavo/tanstarter-monorepo.git ~/codingProjects/opensource/tanstarter-monorepo
+fi
+
 if [[ ! -d ~/codingProjects/opensource/tanstarter-plus ]]; then
     git clone https://github.com/mugnavo/tanstarter-plus.git ~/codingProjects/opensource/tanstarter-plus
 fi
 
 if [[ ! -d ~/codingProjects/opensource/tsu-stack ]]; then
     git clone https://github.com/tsu-moe/tsu-stack.git ~/codingProjects/opensource/tsu-stack
+fi
+
+if [[ ! -d ~/codingProjects/opensource/schema-benchmarks ]]; then
+    git clone https://github.com/open-circle/schema-benchmarks ~/codingProjects/opensource/schema-benchmarks
+fi
+
+if [[ ! -d ~/codingProjects/opensource/astro-tanstack-start ]]; then
+    git clone https://github.com/tannerlinsley/astro-tanstack-start ~/codingProjects/opensource/astro-tanstack-start
 fi
 
 if [[ ! -d ~/codingProjects/opensource/adobe-react-spectrum ]]; then
