@@ -113,6 +113,10 @@ if [[ ! -d ~/codingProjects/personalProjects ]]; then
     mkdir ~/codingProjects/personalProjects
 fi
 
+if [[ ! -d ~/codingProjects/personalProjects/budgeting-app ]]; then
+    git clone https://github.com/thazlett16/budgeting-app.git ~/codingProjects/personalProjects/budgeting-app
+fi
+
 if [[ ! -d ~/codingProjects/personalProjects/thaz-claude-container ]]; then
     git clone https://github.com/thazlett16/thaz-claude-container.git ~/codingProjects/personalProjects/thaz-claude-container
 fi
