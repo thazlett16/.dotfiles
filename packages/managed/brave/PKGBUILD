@@ -1,9 +1,9 @@
 # Used to install: https://aur.archlinux.org/brave-bin.git
-# https://github.com/brave/brave-browser/releases/tag/v1.92.139
+# https://github.com/brave/brave-browser/releases/tag/v1.93.136
 
 pkgname=brave
 pkgdesc='Brave Browser Stable'
-pkgver=1.92.139
+pkgver=1.93.136
 pkgrel=1
 url='https://brave.com'
 arch=('x86_64')
@@ -33,7 +33,7 @@ source=(
     "brave-browser_${pkgver}_amd64.deb::https://github.com/brave/brave-browser/releases/download/v${pkgver}/brave-browser_${pkgver}_amd64.deb"
 )
 sha256sums=(
-    '505415f2206c6ba1dd5211869e0a62df8d68e35c91a1e9e4c5b1b633dd0eeb60'
+    '9739e5aaee4303eb4199c038b04a75d7bc7ac08314af9f763011e211dea62999'
 )
 license=(
     'MPL2'

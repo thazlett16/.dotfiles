@@ -1,9 +1,10 @@
 # Used to install: https://aur.archlinux.org/spotify.git
+# curl -sSf https://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_1.2.95.453.g0eeebbed_amd64.deb | sha256sum
 
 pkgname=spotify
 pkgdesc='A proprietary music streaming service'
 epoch=1
-pkgver=1.2.92.147.g5b8f9367
+pkgver=1.2.95.453.g0eeebbed
 pkgrel=1
 url='https://www.spotify.com'
 arch=('x86_64')
@@ -32,7 +33,7 @@ source=(
     'LICENSE'
 )
 sha256sums=(
-    '1903de14f55a94af3fe52d1b05ff76c40f1ec095355bb18bc2f389381e0be105'
+    '256e2eb1ec96fbc0c51afab247298e4e6eabfabbafafd4617584f44cca2fb31f'
     '4e8bea31ca27e16cac9c9dcd8f6ec27e1f82b45de86d6fee7a1e77e23f884b92'
 )
 license=(
