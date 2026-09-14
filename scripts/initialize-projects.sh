@@ -253,6 +253,10 @@ if [[ ! -d ~/codingProjects/opensource/skeleton ]]; then
     git clone https://github.com/skeletonlabs/skeleton.git ~/codingProjects/opensource/skeleton
 fi
 
+if [[ ! -d ~/codingProjects/opensource/tanmaxx ]]; then
+    git clone https://github.com/jherr/tanmaxx-17.git ~/codingProjects/opensource/tanmaxx
+fi
+
 if [[ ! -d ~/codingProjects/tanStack ]]; then
     mkdir ~/codingProjects/tanStack
 fi
