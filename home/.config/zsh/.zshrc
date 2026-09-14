@@ -16,34 +16,51 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
+bindkey -s "^f" "tmux-sessionizer\n"
+
+# Aliases
+alias ts=tmux-sessionizer
+# Aliases end
+
 # Starship
 eval "$(starship init zsh)"
+# Starship end
 
-# Coding stuff
+# Add .local/bin to path
+export PATH="$HOME/.local/bin:$PATH"
+# .local/bin end
+
+# nvm
 if [[ -d /usr/share/nvm ]]; then
   source /usr/share/nvm/init-nvm.sh
 fi
-
-# PNPM
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
+# nvm end
 
 # Vite+ bin (https://viteplus.dev)
 if [[ -f "$VP_HOME/env" ]]; then
   source "$VP_HOME/env"
 fi
+# Vite+ end
 
-# Claude bin
-export PATH="$HOME/.local/bin:$PATH"
+# pnpm
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
 
 # autosuggestions
 if [[ -d /usr/share/zsh/plugins/zsh-autosuggestions ]]; then
   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fi
+# autosuggestions end
 
 # syntax highlighting
 if [[ -d /usr/share/zsh/plugins/zsh-syntax-highlighting ]]; then
   source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 fi
+# syntax highlighting end

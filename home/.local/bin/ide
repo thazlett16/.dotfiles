@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Rename current window and open nvim
+tmux rename-window "NVIM"
+tmux send-keys "nvim ." Enter
+
+# Open Claude Code in a new window
+tmux neww -n "Claude Code" "claude --permission-mode plan"
+
+# Open a terminal window
+tmux neww -n "terminal"
+
+# Focus back on the NVIM window
+tmux select-window -t "NVIM"
