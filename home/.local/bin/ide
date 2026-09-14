@@ -8,7 +8,10 @@ tmux send-keys "nvim ." Enter
 tmux neww -n "Claude Code" "claude --permission-mode plan"
 
 # Open a terminal window
-tmux neww -n "terminal"
+tmux neww -n "Terminal Dev"
+
+# Open a new terminal window for scripting
+tmux neww -n "Terminal Scripting"
 
 # Focus back on the NVIM window
 tmux select-window -t "NVIM"

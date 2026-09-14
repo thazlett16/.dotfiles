@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+    echo "gwtcr: branch name required" >&2
+    exit 1
+fi
+
+branch="$1"
+suffix="${branch##*/}"
+
+toplevel=$(git rev-parse --show-toplevel) || exit 1
+repo_name=$(basename "$toplevel")
+parent_dir=$(dirname "$toplevel")
+
+git worktree add -b "$branch" "${parent_dir}/${repo_name}-${suffix}" "origin/${branch}"
