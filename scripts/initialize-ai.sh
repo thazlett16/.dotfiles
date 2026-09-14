@@ -1,4 +1,10 @@
 #!/bin/bash
 
-pnpm add -g @anthropic-ai/claude-code
-pnpm add -g opencode-ai
+# Install ClaudeCode coding agent
+curl -fsSL https://claude.ai/install.sh | bash
+
+# Install OpenCode coding agent
+curl -fsSL https://opencode.ai/install | bash
+
+# Install PI coding agent
+curl -fsSL https://pi.dev/install.sh | sh
