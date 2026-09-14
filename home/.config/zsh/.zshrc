@@ -19,7 +19,9 @@ bindkey "^[[3~" delete-char
 bindkey -s "^f" "tmux-sessionizer\n"
 
 # Aliases
-alias ts=tmux-sessionizer
+alias ts="tmux-sessionizer"
+alias gfo="git fetch origin --recurse-submodules=no --progress --prune"
+alias gbl="git branch --list --verbose --all"
 # Aliases end
 
 # Starship

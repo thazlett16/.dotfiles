@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+    echo "gbcm: branch name required" >&2
+    exit 1
+fi
+
+git branch "$1" origin/master^0
