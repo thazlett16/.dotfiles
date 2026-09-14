@@ -28,6 +28,7 @@ ripgrep
 starship
 stow
 tmux
+tree-sitter-cli
 unzip
 which
 xclip
