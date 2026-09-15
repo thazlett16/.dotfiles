@@ -5,9 +5,15 @@ if [[ $# -eq 1 ]]; then
 else
     selected=$(
         {
-            echo ~/.dotfiles
-            find ~/gamingProjects -mindepth 1 -maxdepth 1 -type d
-            find ~/codingProjects -mindepth 2 -maxdepth 2 -type d
+	    echo ~/.dotfiles
+	    echo ~/.dotfiles/work
+	    echo ~/.dotfiles/personal
+	    projects-work
+	    projects-opensource
+	    projects-thaz-collective
+	    projects-personal
+	    projects-gaming
+	    projects-aur
         } | fzf
     )
 fi

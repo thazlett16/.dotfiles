@@ -1,0 +1,6 @@
+[submodule "personal"]
+	path = personal
+	url = https://github.com/thazlett16/.dotfiles-personal.git
+[submodule "work"]
+	path = work
+	url = https://github.com/thazlett16/.dotfiles-work.git
