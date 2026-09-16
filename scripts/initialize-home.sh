@@ -15,6 +15,9 @@ fi
 if [[ ! -d ~/.local/share ]]; then
 	mkdir ~/.local/share
 fi
+if [[ ! -d ~/.local/share/managed ]]; then
+	mkdir ~/.local/share/managed
+fi
 if [[ ! -d ~/.local/state ]]; then
 	mkdir ~/.local/state
 fi

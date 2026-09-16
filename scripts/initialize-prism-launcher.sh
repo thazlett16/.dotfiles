@@ -1,4 +1,4 @@
-#/bin/bash
+#!/usr/bin/env bash
 
 flatpak install flathub org.prismlauncher.PrismLauncher
 

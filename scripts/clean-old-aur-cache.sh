@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #rm -rf ~/.config/CurseForge
 #rm -rf ~/.cache/curseforge-updater

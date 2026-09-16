@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Install ClaudeCode coding agent
 curl -fsSL https://claude.ai/install.sh | bash

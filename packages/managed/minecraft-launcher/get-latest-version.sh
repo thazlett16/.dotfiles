@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Mojang doesn't publish a lightweight version manifest for the native Linux
 # launcher (the legacy launchermeta.mojang.com/mc/launcher.json endpoint
