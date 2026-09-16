@@ -39,8 +39,8 @@ fi
 # nvm end
 
 # Vite+ bin (https://viteplus.dev)
-if [[ -f "$VP_HOME/env" ]]; then
-  source "$VP_HOME/env"
+if [[ -f ~/.config/vite-plus/env ]]; then
+  source ~/.config/vite-plus/env
 fi
 # Vite+ end
 

@@ -1,8 +1,6 @@
-#/bin/bash
+#/usr/bin/env bash
 
-rm ~/.bashrc
-rm ~/.bash-logout
-rm ~/.bash-profile
+rm ~/.bash
 
 chsh -l
 chsh -s $(which zsh)
