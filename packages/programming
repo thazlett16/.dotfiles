@@ -6,6 +6,7 @@ jdk-openjdk
 jdk8-openjdk
 jdk17-openjdk
 jdk21-openjdk
+jdk25-openjdk
 maven
 nvm
 rustup
