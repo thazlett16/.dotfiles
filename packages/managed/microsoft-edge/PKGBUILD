@@ -1,9 +1,9 @@
 # Used to install: https://aur.archlinux.org/microsoft-edge-stable-bin.git
-# curl -sSf https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_151.0.4129.86-1_amd64.deb | sha256sum
+# curl -sSf https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.62-1_amd64.deb | sha256sum
 
 pkgname=microsoft-edge
 pkgdesc='Microsoft Edge Browser Stable'
-pkgver=151.0.4129.86
+pkgver=154.0.4258.62
 pkgrel=1
 url='https://www.microsoft.com/edge'
 arch=('x86_64')
@@ -34,7 +34,7 @@ source=(
     'LICENSE.pdf'
 )
 sha256sums=(
-    '26b02cb1c6465756df94b9ef34191b614f3df627ba21b7b00b641f44cc1d8343'
+    'f425dea59f0a8bac00201685a070e947543c57d135c130ba73e0863cf2c506b1'
     'edf2ed596eb068f168287fc76aa713ad5e0afb59f0a0a47a4f29c0c124ade15e'
 )
 license=(

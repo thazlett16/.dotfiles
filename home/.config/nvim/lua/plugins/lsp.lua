@@ -10,7 +10,12 @@ vim.lsp.config("*", {
 	capabilities = require("blink.cmp").get_lsp_capabilities(),
 })
 
-vim.lsp.enable({ "ts_ls", "jsonls", "yamlls", "lua_ls", "oxlint" })
+-- qmlls ships with qt6-declarative, but Qt's bin dir isn't on PATH
+vim.lsp.config("qmlls", {
+	cmd = { "/usr/lib/qt6/bin/qmlls" },
+})
+
+vim.lsp.enable({ "ts_ls", "jsonls", "yamlls", "lua_ls", "oxlint", "qmlls" })
 
 vim.diagnostic.config({
 	virtual_text = {
