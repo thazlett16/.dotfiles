@@ -7,7 +7,7 @@ export XDG_BIN_HOME="$HOME/.local/bin"
 export XDG_BIN_DIR="$XDG_BIN_HOME"
 
 # Move other zsh files to Config Home
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 
 # General environment variables
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
@@ -19,7 +19,7 @@ export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export MAVEN_ARGS="--settings $XDG_CONFIG_HOME/maven/settings.xml"
 export MAVEN_OPTS=-Dmaven.repo.local="$XDG_DATA_HOME"/maven/repository
 export MAVEN_USER_HOME="$XDG_DATA_HOME"/maven
-export NPM_CONFIG_USERCONFIG="$HOME/.config/npm/npmrc"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export NVM_DIR="$XDG_DATA_HOME"/nvm
 export PNPM_HOME="$XDG_DATA_HOME"/pnpm
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
