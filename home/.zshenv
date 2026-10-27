@@ -9,6 +9,11 @@ export XDG_BIN_DIR="$XDG_BIN_HOME"
 # Move other zsh files to Config Home
 export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 
+# Machine-specific variables, only present where the work dotfiles are stowed
+if [[ -f "$XDG_CONFIG_HOME/environment/env.zsh" ]]; then
+  source "$XDG_CONFIG_HOME/environment/env.zsh"
+fi
+
 # General environment variables
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export CLAUDE_CONFIG_DIR="$XDG_CONFIG_HOME"/claude
