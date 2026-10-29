@@ -4,14 +4,39 @@
 tmux rename-window "NVIM"
 tmux send-keys "nvim ." Enter
 
-# Open Claude Code in a new window
-tmux neww -n "Claude Code" "claude --permission-mode plan"
+if [[ -d "./.devcontainer" ]]; then
+    devcontainer up --workspace-folder .
+    # tmux neww -n "DC - Terminal" "devcontainer up --workspace-folder . && devcontainer exec --workspace-folder . zsh"
+    # Open Claude Code in a new window
+    tmux neww -n "Claude" "devcontainer exec --workspace-folder . claude --permission-mode plan"
 
-# Open a terminal window
-tmux neww -n "Terminal Dev"
+    # Open Terminal window dev commands
+    tmux neww -n "TermDev" "devcontainer exec --workspace-folder . zsh"
 
-# Open a new terminal window for scripting
-tmux neww -n "Terminal Scripting"
+    # Open Terminal window scripting
+    tmux neww -n "TermScript" "devcontainer exec --workspace-folder . zsh"
+
+    tmux neww -n "TerminalMachine"
+
+    if [[ -f "./.devcontainer/docker-compose.yaml" ]]; then
+        docker compose -f ./.devcontainer/docker-compose.yaml up -d
+
+        tmux neww -n "ComposeLogs" "docker compose -f ./.devcontainer/docker-compose.yaml logs -f"
+    elif [[ -f "./.devcontainer/docker-compose.yml" ]]; then
+        docker compose -f ./.devcontainer/docker-compose.yml up -d
+
+        tmux neww -n "ComposeLogs" "docker compose -f ./.devcontainer/docker-compose.yml logs -f"
+    fi
+else
+    # Open Claude Code in a new window
+    tmux neww -n "Claude" "claude --permission-mode plan"
+
+    # Open a terminal window
+    tmux neww -n "TermDev"
+
+    # Open a new terminal window for scripting
+    tmux neww -n "TermScript"
+fi
 
 # Focus back on the NVIM window
 tmux select-window -t "NVIM"
