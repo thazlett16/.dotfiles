@@ -10,11 +10,15 @@ setopt HIST_IGNORE_SPACE         # Do not record an event starting with a space.
 setopt SHARE_HISTORY             # Share history between all sessions.
 
 # Key Binds
-bindkey "^[[1;5C" forward-word
-bindkey "^[[1;5D" backward-word
-bindkey "^[[H" beginning-of-line
-bindkey "^[[F" end-of-line
-bindkey "^[[3~" delete-char
+bindkey "^[[1;5C" forward-word         # Ctrl+Right
+bindkey "^[[1;5D" backward-word        # Ctrl+Left
+bindkey "^[[H"  beginning-of-line      # Home (xterm)
+bindkey "^[OH"  beginning-of-line      # Home (application mode)
+bindkey "^[[1~" beginning-of-line      # Home (screen/tmux)
+bindkey "^[[F"  end-of-line            # End (xterm)
+bindkey "^[OF"  end-of-line            # End (application mode)
+bindkey "^[[4~" end-of-line            # End (screen/tmux)
+bindkey "^[[3~" delete-char            # Delete
 
 bindkey -s "^f" "tmux-sessionizer\n"
 
