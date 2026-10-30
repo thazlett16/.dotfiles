@@ -4,3 +4,6 @@
 [submodule "work"]
 	path = work
 	url = https://github.com/thazlett16/.dotfiles-work.git
+[submodule "machines"]
+	path = machines
+	url = https://github.com/thazlett16/.dotfiles-machine-specific.git
